@@ -4,109 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Micheal的空间</title>
+    <link rel="shortcut icon"  href="./img/Micheal.jpg" >
+    <link rel="stylesheet" href="https://preview.tabler.io/dist/css/tabler.min.css">
 
-    <link rel="stylesheet" href="./css/tabler.min.css">
-    <script src="./js/tabler.min.js"></script>
-    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="https://preview.tabler.io/dist/js/tabler.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+    <script src="./js/script.index.js"></script>
+    <!-- 页面雪花飘零 -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fuukei/Public_Repository@latest/static/js/sakura-less.js"></script>
+
 </head>
 
-<body class="d-flex flex-column theme-light">
-    <div class="page page-center">
-        <div class="container container-tight py-4">
-            <div class="text-center mb-4">
-            </div>
-            <div class="card card-md">
-                <div class="card-body">
-                    <h2 class="h2 text-center mb-4">
-                        <svg class="icon" style="width: 30px;height: 30px;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2163"><path d="M512 537.6a230.4 230.4 0 1 1 0-460.8 230.4 230.4 0 0 1 0 460.8z m0-51.2a179.2 179.2 0 1 0 0-358.4 179.2 179.2 0 0 0 0 358.4z" fill="#758DFF" p-id="2164"></path><path d="M947.2 921.6a25.6 25.6 0 1 1-51.2 0 382.464 382.464 0 0 0-101.7344-260.4032 25.6 25.6 0 1 1 37.5808-34.7136A433.664 433.664 0 0 1 947.2 921.6zM512 486.4a25.6 25.6 0 1 1 0 51.2A384 384 0 0 0 128 921.6a25.6 25.6 0 1 1-51.2 0A435.2 435.2 0 0 1 512 486.4z" fill="#758DFF" p-id="2165"></path></svg>
-                        &nbsp&nbsp&nbsp 用户登录
-                    </h2>
-                    <form action="." method="get" autocomplete="off" novalidate="">
-                        <div class="mb-3">
-                            <label class="form-label">电子邮箱</label>
-                            <input type="email" class="form-control" placeholder="your@email.com" autocomplete="off">
-                        </div>
-                        <div class="mb-2">
-                            <label class="form-label">
-                                密码
-                                <span class="form-label-description">
-                                    <a href="./forgot-password.html">I forgot password</a>
-                                </span>
-                            </label>
-                            <div class="input-group input-group-flat">
-                                <input type="password" class="form-control" placeholder="Your password"
-                                    autocomplete="off">
-                                <span class="input-group-text">
-                                    <a href="#" class="link-secondary" data-bs-toggle="tooltip"
-                                        aria-label="Show password" data-bs-original-title="Show password">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
-                                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                                            stroke-linecap="round" stroke-linejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                            <path d="M12 12m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                                            <path
-                                                d="M22 12c-2.667 4.667 -6 7 -10 7s-7.333 -2.333 -10 -7c2.667 -4.667 6 -7 10 -7s7.333 2.333 10 7">
-                                            </path>
-                                        </svg>
-                                    </a>
-                                </span>
+<body>
+    <!-- 看板娘 -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/autoload.js"></script> -->
+    
+    <!--给网站添加鼠标点击爆炸五颜六色特效-->
+    <script src="./js/blast.js"></script>
+
+    <div class="page">
+        <div id="page-header"></div>
+
+        <!-- 内容栏 -->
+        <div class="page-wrapper">
+            <!-- Page body -->
+            <div class="page-body">
+                <div class="container-xl">
+                    <div class="row row-deck row-cards">
+                        <!-- 独占12列的元素 -->
+                        <div class="col-12">
+                            <div class="card card-md">
+                                <div class="card-body">
+                                    <img src="./img/AI.png" style="width: 300px" alt="unknow">
+                                    <div>
+                                        <h1>本网站仅供学习交流使用</h1>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="mb-2">
-                            <label class="form-check">
-                                <input type="checkbox" class="form-check-input">
-                                <span class="form-check-label">Remember me on this device</span>
-                            </label>
+
+                        <!-- <div class="col-sm-6 col-lg-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h1 style="width:100%; text-align: center;">我爱学习呀~</h1>
+                                    <a href="./myHoney.loveTree.html">
+                                        <img src="./img/love.jpeg" style="width: 300px; height: 150px;" alt="unknow">
+                                    </a>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h1 style="width:100%; text-align: center;">ChatGPT</h1>
+                                    <a href="./tools.chatgpt.chatgpt4_0.html">
+                                        <img src="./img/ChatGPT.jpg" style="width: 300px; height: 150px;" alt="unknow">
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="form-footer">
-                            <button type="submit" class="btn btn-primary w-100">Sign in</button>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h1 style="width:100%; text-align: center;">IP地址查询/网络测速</h1>
+                                    <a href="./tools.ipAddress.html">
+                                        <img src="./img/InternetSpeed.jpeg" style="width: 300px; height: 150px;" alt="unknow">
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                    </form>
-                </div>
-                <div class="hr-text">or</div>
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col"><a href="#" class="btn w-100">
-                                <!-- Download SVG icon from http://tabler-icons.io/i/brand-github -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon text-github" width="24" height="24"
-                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <path
-                                        d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5">
-                                    </path>
-                                </svg>
-                                Login with Github
-                            </a></div>
-                        <div class="col"><a href="#" class="btn w-100">
-                                <!-- Download SVG icon from http://tabler-icons.io/i/brand-twitter -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon text-twitter" width="24" height="24"
-                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <path
-                                        d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z">
-                                    </path>
-                                </svg>
-                                Login with Twitter
-                            </a></div>
                     </div>
                 </div>
             </div>
-            <div class="text-center text-muted mt-3">
-                Don't have account yet? <a href="./sign-up.html" tabindex="-1">Sign up</a>
-            </div>
+
+            <!-- 底部信息栏 -->
+            <footer id="page-footer" class="footer footer-transparent d-print-none">
+            </footer>
         </div>
     </div>
 </body>
-
-<script>
-    $("button").click(function(){
-        var emailAddress = $("input[type='email']").val();
-        var password = $("input[type='password'").val();
-        alert(emailAddress+";"+password);
-    });
-</script>
 
 </html>
